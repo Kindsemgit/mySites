@@ -4,14 +4,27 @@ let sites = JSON.parse(localStorage.getItem('sites')) || [
   {
     name: "Dohod",
     url: "https://www.dohod.ru",
-    category: "Инвистиции",
+    category: "Аналитика",
     favicon: "https://www.dohod.ru/favicon.ico"
   },
   {
     name: "Dohod-Дивиденды",
     url: "https://www.dohod.ru/ik/analytics/dividend",
-    category: "Инвистиции",
+    category: "Аналитика",
     favicon: "https://www.dohod.ru/favicon.ico"
+  },
+
+  {
+    name: "Tradingview",
+    url: "https://ru.tradingview.com/chart/Y7ITplla/",
+    category: "Аналитика",
+    favicon: "https://ru.tradingview.com/favicon.ico"
+  },
+  {
+    name: "Capico",
+    url: "https://capico.app/app/terminal",
+    category: "Аналитика",
+    favicon: "https://capico.app/assets/favicon/android-chrome-144x144.png"
   },
   // Портфель
   {
@@ -39,26 +52,6 @@ let sites = JSON.parse(localStorage.getItem('sites')) || [
     favicon: "https://www.tbank.ru/favicon.ico"
   },
 
-  // Криптовалюта
-  {
-    name: "Tradingview",
-    url: "https://ru.tradingview.com/chart/Y7ITplla/",
-    category: "Криптовалюта",
-    favicon: "https://ru.tradingview.com/favicon.ico"
-  },
-  {
-    name: "Capico",
-    url: "https://capico.app/app/terminal",
-    category: "Криптовалюта",
-    favicon: "https://capico.app/assets/favicon/android-chrome-144x144.png"
-  },
-  {
-    name: "OKX",
-    url: "https://www.okx.com/en-us",
-    category: "Криптовалюта",
-    favicon: "https://www.okx.com/favicon.ico"
-  },
-
   // Работа
   {
     name: "Тинькофф-Учеба",
@@ -77,6 +70,28 @@ let sites = JSON.parse(localStorage.getItem('sites')) || [
     url: "https://tqm.tinkoff.ru/filter/communications/voice",
     category: "Работа",
     favicon: "https://www.tbank.ru/favicon.ico"
+  },
+  // Нейросети
+  {
+    name: "deepseek",
+    url: "https://chat.deepseek.com/",
+    category: "Нейросети",
+    favicon: "https://chat.deepseek.com/favicon.svg"
+  },
+
+  {
+    name: "ChatGPT4",
+    url: "https://ai-chatgp4.com/",
+    category: "Нейросети",
+    favicon: "https://ai-chatgp4.com/favicon.ico"
+  },
+
+  // Досуг
+  {
+    name: "Афиша",
+    url: "https://nn.kassir.ru/",
+    category: "Досуг",
+    favicon: "https://nn.kassir.ru/favicon.ico"
   },
 
 ];
