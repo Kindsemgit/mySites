@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мои сайты</title>
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/script.js"></script>
+</head>
+
+<body>
+  <h1><i class="fas fa-bookmark"></i> Мои сайты</h1>
+
+  <div class="controls">
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Поиск сайтов...">
+    </div>
+    <div class="category-filter">
+      <select id="categorySelect">
+        <option value="all">Все категории</option>
+        <!-- Категории будут добавлены динамически -->
+      </select>
+    </div>
+  </div>
+
+  <div class="category-tabs" id="categoryTabs">
+    <div class="category-tab all active" data-category="all">Все</div>
+    <!-- Категории будут добавлены динамически -->
+  </div>
+
+  <div class="add-site-form">
+    <h2><i class="fas fa-plus-circle"></i> Добавить новый сайт</h2>
+    <div class="form-row">
+      <div class="form-group">
+        <label for="newSiteName">Название сайта</label>
+        <input type="text" id="newSiteName" placeholder="Например: Google">
+      </div>
+      <div class="form-group">
+        <label for="newSiteUrl">URL сайта</label>
+        <input type="text" id="newSiteUrl" placeholder="https://www.example.com">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label for="newSiteCategory">Категория</label>
+        <input type="text" id="newSiteCategory" placeholder="Например: Поисковики">
+      </div>
+      <div class="form-group" style="align-self: flex-end;">
+        <button onclick="addSite()"><i class="fas fa-save"></i> Сохранить</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="site-list" id="siteList">
+    <!-- Список сайтов будет здесь -->
+  </div>
+
+</body>
+
+</html>
